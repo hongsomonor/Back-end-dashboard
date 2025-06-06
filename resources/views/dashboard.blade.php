@@ -3,7 +3,7 @@
 <body>
     <div class="container-scroller">
         @include('layouts.sidebar')
-        <div class="container-fluid page-body-wrapper">
+        <div class="container-fluid page-body-wrapper bg-dark">
             @include('layouts.navbar')
             @yield('content')
         </div>
