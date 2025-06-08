@@ -28,7 +28,6 @@
         <div class="container-fluid page-body-wrapper bg-dark">
             @include('layouts.navbar')
             @yield('content')
-            
         </div>
     </div>
     @include('layouts.script')

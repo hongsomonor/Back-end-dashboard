@@ -21,7 +21,7 @@
             <span class="nav-link">Navigation</span>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="/main">
+            <a class="nav-link" href="/dashboard/main">
                 <span class="menu-icon">
                     <i class="fa-solid fa-eye"></i>
                 </span>
@@ -29,7 +29,7 @@
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="/product">
+            <a class="nav-link" href="/dashboard/product">
                 <span class="menu-icon">
                     <i class="fa-solid fa-table-list"></i>
                 </span>

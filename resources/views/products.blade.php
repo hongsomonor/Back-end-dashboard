@@ -8,6 +8,12 @@
             width: 95%;
             margin: 100px auto;
             border-radius: 10px;
+            display: flex; /* Make it a flex container */
+            flex-direction: column; /* Stack children vertically */
+        }
+        .page{
+            margin-top: auto; /* This pushes the pagination to the bottom */
+            /* Remove margin-top: 40px; if it's still there */
         }
 
         .table-responsive tbody td:nth-child(4) {
@@ -23,8 +29,10 @@
             margin-bottom: 10px
         }
 
-        .btn-ss{
+        .btn-ss {
             background-color: gray;
+            width: 9%;
+            margin-bottom: 10px;
         }
 
         h1 {
@@ -50,22 +58,25 @@
             <tbody>
                 @foreach ($products as $product)
                     <tr>
-                        <td>{{ $product->id }}</td>
+                        <td>{{ $loop->index + $products->firstItem() }}</td> <!-- count item pi ler mk vinh -->
                         <td class="p-3">
                             <img src={{ asset('uploads/' . $product->image) }} alt="image"
                                 style="width: 70px; height: 70px;" />
                         </td>
                         <td>{{ $product->name }}</td>
                         <td>{{ $product->description }}</td>
-                        <td>{{ $product->price }}</td>
+                        <td>$ {{ $product->price }}</td>
                         <td>{{ $product->category }}</td>
                         <td>
-                            <button class=" btn btn-primary mr-1">Edit</button>
-                            <button class=" btn btn-danger">Delete</button>
+                            <a href={{ route('product-edit' , $product->id) }}><button class=" btn btn-primary mr-1">Edit</button></a>
+                            <a href={{ route('product-delete' , $product->id ) }}><button onclick="return confirm('Are you sure?')" class=" btn btn-danger">Delete</button></a>
                         </td>
                     </tr>
                 @endforeach
             </tbody>
         </table>
+        <div class="page">
+            {{ $products->links() }}
+        </div>
     </div>
 @endsection
