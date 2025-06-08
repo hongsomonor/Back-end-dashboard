@@ -82,8 +82,7 @@ class ProductController extends Controller
 
         $products = Product::where('id', $id)->first();
 
-        // កំណត់តម្លៃដំបូង (Initialize) ឱ្យ $fileName ជាមួយនឹងឈ្មោះរូបភាពចាស់របស់ផលិតផល។
-        // នេះធានាថា $fileName នឹងមានតម្លៃជានិច្ច ទោះបីគ្មានរូបភាពថ្មីត្រូវបាន upload ក៏ដោយ។
+        
         $fileName = $products->image; // បន្ទាត់ដែលបានបន្ថែម/កែតម្រូវ
 
         if ($request->hasFile('image')) {
