@@ -18,6 +18,8 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
+Route::get('/main' , [ProductController::class,'main'])->name('product-view');
+
 Route::get('/product' , [ProductController::class,'index'])->name('product-list');
 
 Route::get('product/add' , [ProductController::class,'add'])->name('product-add');

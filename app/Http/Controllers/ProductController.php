@@ -15,6 +15,10 @@ class ProductController extends Controller
         return view('products',compact('products'));
     }
 
+    public function main(){
+        return view('main');
+    }
+
     public function add() {
         return view('add');
     }

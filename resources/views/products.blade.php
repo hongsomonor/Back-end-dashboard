@@ -23,13 +23,17 @@
             margin-bottom: 10px
         }
 
+        .btn-ss{
+            background-color: gray;
+        }
+
         h1 {
             margin-bottom: 20px;
             color: gray
         }
     </style>
     <div class="table-responsive">
-        <button type="button" class="btn btn-success btn-icon-text"> <a class=" text-decoration-none text-light"
+        <button type="button" class="btn btn-ss btn-icon-text"> <a class=" text-decoration-none text-light"
                 href={{ route('product-add') }}>+ Add item</a> </button>
         <table class="table table-striped">
             <thead>

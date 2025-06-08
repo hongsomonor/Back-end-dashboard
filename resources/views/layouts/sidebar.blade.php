@@ -8,7 +8,7 @@
             <div class="profile-desc">
                 <div class="profile-pic">
                     <div class="count-indicator">
-                        <img class="img-xs rounded-circle " src="assets/images/faces/face15.jpg" alt="">
+                        <img class="img-xs rounded-circle " src={{ asset('assets/smn.jpg') }} alt="">
                         <span class="count bg-success"></span>
                     </div>
                     <div class="profile-name">
@@ -21,12 +21,21 @@
             <span class="nav-link">Navigation</span>
         </li>
         <li class="nav-item menu-items">
+            <a class="nav-link" href="/main">
+                <span class="menu-icon">
+                    <i class="fa-solid fa-eye"></i>
+                </span>
+                <span class="menu-title">Item Count</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
             <a class="nav-link" href="/product">
                 <span class="menu-icon">
                     <i class="fa-solid fa-table-list"></i>
                 </span>
-                <span class="menu-title">Products</span>
+                <span class="menu-title">Item list</span>
             </a>
         </li>
+        
     </ul>
 </nav>

@@ -64,7 +64,7 @@
             
             <br>
             <button type="submit" class="btn btn-primary mr-2">Save</button>
-            <button class="btn btn-dark">Cancel</button>
+            <button class="btn btn-dark"><a href="/product" class=" text-decoration-none">Cancel</a></button>
         </form>
     </div>
 @endsection
