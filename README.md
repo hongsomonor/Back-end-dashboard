@@ -21,4 +21,13 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## Project clone
 
+-> git clone https://github.com/hongsomonor/Back-end-dashboard.git
+-> cd Back-end-dahsboard
+-> go to file docker-compose.yml to change port on line 29 : - '${FORWARD_DB_PORT:-3307}:3306'  | change 3307 to 3306
+-> create new file .env and then copy all code from .env-example to paste in file .env
+-> composer global require laravel/installer
+-> ./vendor/bin/sail up -d
+-> ./vendor/bin/sail artisan migrate
+-> go to your docker and then run port on your docker
