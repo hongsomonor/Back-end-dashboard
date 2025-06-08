@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,6 +18,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+
+/* Auth */
+    Route::get('/register' , [AuthController::class , 'register'])->name('register');
+    Route::post('/register/submit' , [AuthController::class ,'submit_register'])->name('submit-register');
+    Route::get('/login' , [AuthController::class ,'login'])->name('login');
+    Route::post('/login/submit' , [AuthController::class ,'submit_login'])->name('submit_login');
+/* End of Auth */
 
 Route::get('/dashboard/main' , [ProductController::class,'main'])->name('product-view');
 

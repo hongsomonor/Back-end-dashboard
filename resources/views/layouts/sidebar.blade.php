@@ -1,7 +1,7 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-        <a class="sidebar-brand brand-logo text-decoration-none text-center" href="/">SMN
-            <a class="sidebar-brand brand-logo-mini text-decoration-none text-center" href="/">SMN</a>
+        <a class="sidebar-brand brand-logo text-decoration-none text-center" href="/dashboard">SMN
+            <a class="sidebar-brand brand-logo-mini text-decoration-none text-center" href="/dashboard">SMN</a>
     </div>
     <ul class="nav h-100">
         <li class="nav-item profile">

@@ -71,7 +71,7 @@
 
             <br>
             <button type="submit" class="btn btn-primary mr-2">Update</button>
-            <button class="btn btn-dark"><a href="/product" class=" text-decoration-none">Cancel</a></button>
+            <button class="btn btn-dark"><a href="/dashboard/product" class=" text-decoration-none">Cancel</a></button>
         </form>
     </div>
 @endsection
