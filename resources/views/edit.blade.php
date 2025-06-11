@@ -7,6 +7,7 @@
             padding: 30px;
             margin: 100px auto;
             width: 95%;
+            height: 85%;
         }
 
         .forms-sample {
