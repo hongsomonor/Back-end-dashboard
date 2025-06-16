@@ -17,6 +17,11 @@ class ProductController extends Controller
         return view('products', compact('products'));
     }
 
+    public function apiIndex(){
+        $products = Product::orderBy('id','desc')->get();
+        return response()->json($products);
+    }
+
     public function main()
     {
         $pizzaCount = Product::where('category', 'Pizza')->count();
